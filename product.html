@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/swiper.css">
+  <title>Категории</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header ">
+  <div class="container header__container">
+    <a class="logo header__logo" href="index.html" aria-label="Логотип">
+      <picture>
+        <source media="(max-width: 1024.99px)" srcset="assets/images/logo-table.svg">
+        <img src="assets/images/logo.svg" alt="Логотип">
+      </picture>
+    </a>
+    <div class="menu">
+      <a class="menu__btn" href="">
+        <svg class='menu__btn-icon icon-box'>
+          <use xlink:href='assets/images/sprite/sprite.svg#menu'></use>
+        </svg>
+        <span class="menu__btn-label">Каталог</span>
+      </a>
+      <div class="menu__list">
+        <div class="container">
+          <div class="menu__inner">
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Молоко, сыр, яйцо</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Хлеб</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Фрукты и овощи</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Замороженые продукты</a>
+              </li>
+            </ul>
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Наптики</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Кондитерские изделия</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Чай, кофе</a>
+              </li>
+            </ul>
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Бакалея</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Здоровые напитки</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Зоотовары</a>
+              </li>
+            </ul>
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Непродовольственные товары</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Детское питание</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Мясо, птица, колбаса</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <div class="search__field">
+        <input class="search__input" type="text" placeholder="Найти товар">
+        <button class="btn-reset search__btn">
+          <svg class='search__btn-icon icon-box'>
+            <use xlink:href='assets/images/sprite/sprite.svg#search'></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav class="header__nav header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="btn-reset header-nav__link" href="" >
+            <svg class="header-nav__link-icon icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#menu'></use>
+            </svg>
+            <span class="header-nav__link-text">Каталог</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">
+            <svg class="header-nav__link-icon icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+            </svg>
+            <span class="header-nav__link-text">Избранное</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">
+            <svg class="header-nav__link-icon icon-box icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#order'></use>
+            </svg>
+            <span class="header-nav__link-text">Заказы</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">
+            <svg class="header-nav__link-icon icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#shopping-cart'></use>
+            </svg>
+            <span class="header-nav__link-text">Корзина</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="user-menu" href="">
+            <img class="user-menu__avatar" src="assets/images/avatar.webp" alt="Алексей">
+            <span class="user-menu__name">Алексей</span>
+            <button class="btn-reset user-menu__arrow">
+              <svg class='user-menu__arrow-icon icon-box'>
+                <use xlink:href='assets/images/sprite/sprite.svg#chevron-down'></use>
+              </svg>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+      <main class="main">
+        <section class="product">
+            <div class="container">
+                <ul class="breadcrambs">
+                    <li>
+                        <a href="">Главная</a>
+                        <svg class='icon-box'>
+                            <use xlink:href='assets/images/sprite/sprite.svg#chevron-right'></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="">Каталог</a>
+                        <svg class='icon-box'>
+                            <use xlink:href='assets/images/sprite/sprite.svg#chevron-right'></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="">Молоко, сыр, яйцо</a>
+                        <svg class='icon-box'>
+                            <use xlink:href='assets/images/sprite/sprite.svg#chevron-right'></use>
+                        </svg>
+                    </li>
+                     <li>
+                        <a>Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г</a>
+                    </li>
+                </ul>
+                <h1 class="product__name">Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г</h1>
+                <div class="product__stat">
+                    <span class="product__art">арт. 371431</span>
+                    <div class="product__rating rating">
+                        <ul class="rating__list">
+                            <li class="rating__star">
+                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                </svg>
+                            </li>
+                            <li class="rating__star">
+                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                </svg>
+                            </li>
+                            <li class="rating__star">
+                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                </svg>
+                            </li>
+                            <li class="rating__star">
+                                <svg class='icon-box rating__star-icon' >
+                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                </svg>
+                            </li>
+                            <li class="rating__star">
+                                <svg class='icon-box rating__star-icon ' >
+                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <a class="rating__label" href="#">3 отзыва</a>
+                    </div>
+                    <button class="btn-reset product__stat-btn product__share">
+                        <svg class='icon-box'>
+                            <use xlink:href='assets/images/sprite/sprite.svg#share'></use>
+                        </svg>
+                        <span>Поделиться</span>
+                    </button>
+                    <button class="btn-reset product__stat-btn  product__like">
+                        <svg class='icon-box'>
+                            <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                        </svg>
+                        <span>В избранное</span>
+                    </button>
+                </div>
+                <div class="product__content">
+                    <div class="product__images product-images">
+                        <ul class="product-images__gallery">
+                            <li class="product-images__gallery-item">
+                                <img src="assets/images/product/01.webp" alt="">
+                            </li>
+                            <li class="product-images__gallery-item">
+                                <img src="assets/images/product/01.webp" alt="">
+                            </li>
+                            <li class="product-images__gallery-item">
+                                <img src="assets/images/product/01.webp" alt="">
+                            </li>
+                            <li class="product-images__gallery-item">
+                                <img src="assets/images/product/01.webp" alt="">
+                            </li>
+                            <li class="product-images__gallery-item">
+                                <img src="assets/images/product/02.webp" alt="">
+                            </li>
+                        </ul>
+                        <div class="product-images__gallery-img">
+                            <img src="assets/images/product/01.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="product__info">
+                        <div class="product__price-wrap">
+                            <div class="product__price-def">
+                                <div class="product__price">192,69</div>
+                                <div class="product__price-descr">Обычная цена</div>
+                            </div>
+                            <div class="product__price-cards">
+                                <div class="product__price">108,99</div>
+                                <div class="product__price-descr">
+                                    <span>С картой Северяночки</span>
+                                    <svg class='icon-box'>
+                                        <use xlink:href='assets/images/sprite/sprite.svg#info'></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__buy">
+                            <button class="btn-reset product__buy-btn">
+                                <svg class='icon-box'>
+                                    <use xlink:href='assets/images/sprite/sprite.svg#shopping-cart'></use>
+                                </svg>
+                                <span>В корзину</span>
+                            </button>
+                            <div class="product__bonus bonus">
+                                <svg class='icon-box'>
+                                    <use xlink:href='assets/images/sprite/sprite.svg#atom'></use>
+                                </svg>
+                                <span>Вы получаете <b>10 бонусов</b></span>
+                            </div>
+                            <div class="product__notification">
+                                <svg class='icon-box'>
+                                    <use xlink:href='assets/images/sprite/sprite.svg#bell-off'></use>
+                                </svg>
+                                <span>Уведомить о снижении цены</span>
+                            </div>
+                        </div>
+                        <div class="product__characteristics characteristics">
+                            <ul class="characteristics__list">
+                                <li class="characteristics__row">
+                                    <div class="characteristics__col">Бренд</div>
+                                    <div class="characteristics__col">ПРОСТОКВАШИНО</div>
+                                </li>
+                                <li class="characteristics__row">
+                                    <div class="characteristics__col">Страна производителя</div>
+                                    <div class="characteristics__col">Россия</div>
+                                </li>
+                                <li class="characteristics__row">
+                                    <div class="characteristics__col">Вес</div>
+                                    <div class="characteristics__col">180г</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product__similar product-similar">
+                        <div class="product-similar__title">Похожее</div>
+                        <div class="product-similar__list">
+                            <a class="product-similar__item">
+                                <img class="product-similar__item-img" src="assets/images/product/02.webp" alt="">
+                                <span class="product-similar__item-price">159</span>
+                            </a>
+                            <a class="product-similar__item">
+                                <img class="product-similar__item-img" src="assets/images/product/02.webp" alt="">
+                                <span class="product-similar__item-price">159</span>
+                            </a>
+                            <a class="product-similar__item">
+                                <img class="product-similar__item-img" src="assets/images/product/02.webp" alt="">
+                                <span class="product-similar__item-price">159</span>
+                            </a>
+                            <a class="product-similar__item">
+                                <img class="product-similar__item-img" src="assets/images/product/02.webp" alt="">
+                                <span class="product-similar__item-price">159</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="container">
+                    <div class="card-product__top">
+                        <h2 class="card-product__title title-2">С этим товарм покупают</h2>
+                    </div>
+                    <ul class="card-product__items">
+                        <li class="card-product__item">
+                            <article class="card">
+                                <div class="card__img">
+                                    <a class="card__img-link" href="">
+                                        <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                                    </a>
+                                    <a class="card__tage" href="#">-50%</a>
+                                    <button class="btn-reset card__like">
+                                        <svg class='card__like-icon icon-box'>
+                                            <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__content">
+                                    <div class="card__prices">
+                                        <div class="card__price-box">
+                                            <div class="card__price card__price-cards">44,50</div>
+                                            <span class="card__price-descr">С картой</span>
+                                        </div>
+                                        <div class="card__price-box">
+                                            <div class="card__price">44,50</div>
+                                            <span class="card__price-descr">Обычная</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                                   <div class="rating">
+                                        <ul class="rating__list">
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn-reset card__btn">В корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="card-product__item">
+                            <article class="card">
+                                <div class="card__img">
+                                    <a class="card__img-link" href="">
+                                        <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                                    </a>
+                                    <a class="card__tage" href="#">-50%</a>
+                                    <button class="btn-reset card__like">
+                                        <svg class='card__like-icon icon-box'>
+                                            <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__content">
+                                    <div class="card__prices">
+                                        <div class="card__price-box">
+                                            <div class="card__price card__price-cards">44,50</div>
+                                            <span class="card__price-descr">С картой</span>
+                                        </div>
+                                        <div class="card__price-box">
+                                            <div class="card__price">44,50</div>
+                                            <span class="card__price-descr">Обычная</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                                   <div class="rating">
+                                    <ul class="rating__list">
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon ' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon ' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <button class="btn-reset card__btn">В корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="card-product__item">
+                            <article class="card">
+                                <div class="card__img">
+                                    <a class="card__img-link" href="">
+                                        <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                                    </a>
+                                    <a class="card__tage" href="#">-50%</a>
+                                    <button class="btn-reset card__like">
+                                        <svg class='card__like-icon icon-box'>
+                                            <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__content">
+                                    <div class="card__prices">
+                                        <div class="card__price-box">
+                                            <div class="card__price card__price-cards">44,50</div>
+                                            <span class="card__price-descr">С картой</span>
+                                        </div>
+                                        <div class="card__price-box">
+                                            <div class="card__price">44,50</div>
+                                            <span class="card__price-descr">Обычная</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                                   <div class="rating">
+                                    <ul class="rating__list">
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon ' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon ' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <button class="btn-reset card__btn">В корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="card-product__item">
+                            <article class="card">
+                                <div class="card__img">
+                                    <a class="card__img-link" href="">
+                                        <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                                    </a>
+                                    <a class="card__tage" href="#">-50%</a>
+                                    <button class="btn-reset card__like">
+                                        <svg class='card__like-icon icon-box'>
+                                            <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__content">
+                                    <div class="card__prices">
+                                        <div class="card__price-box">
+                                            <div class="card__price card__price-cards">44,50</div>
+                                            <span class="card__price-descr">С картой</span>
+                                        </div>
+                                        <div class="card__price-box">
+                                            <div class="card__price">44,50</div>
+                                            <span class="card__price-descr">Обычная</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                                   <div class="rating">
+                                    <ul class="rating__list">
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon ' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon ' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <button class="btn-reset card__btn">В корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="container">
+                    <h2 class="reviews__title title-2">Отзывы</h2>
+                    <div class="reviews__body">
+                        <div class="reviews__rating reviews-rating">
+                            <div class="reviews-rating__top">
+                                <div class="rating">
+                                    <ul class="rating__list">
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon ' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon ' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="reviews-rating__label">4 из 5</span>
+                            </div>
+                            <ul class="reviews-rating__list">
+                                <li class="reviews-rating__list-item">
+                                    <span>5</span>
+                                    <div class="rating">
+                                        <ul class="rating__list">
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span>1</span>
+                                </li>
+                                <li class="reviews-rating__list-item">
+                                    <span>4</span>
+                                    <div class="rating">
+                                        <ul class="rating__list">
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span>1</span>
+                                </li>
+                                <li class="reviews-rating__list-item">
+                                    <span>3</span>
+                                    <div class="rating">
+                                        <ul class="rating__list">
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span>1</span>
+                                </li>
+                                <li class="reviews-rating__list-item">
+                                    <span>2</span>
+                                    <div class="rating">
+                                        <ul class="rating__list">
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span>1</span>
+                                </li>
+                                <li class="reviews-rating__list-item">
+                                    <span>1</span>
+                                    <div class="rating">
+                                        <ul class="rating__list">
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span>0</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="reviews__comments">
+                            <ul class="reviews__list">
+                                <li class="reviews__list-item item-reviews">
+                                    <div class="item-reviews__top">
+                                        <img class="item-reviews__avatar" src="assets/images/coment-avater.svg" alt="Мария">
+                                        <div class="item-reviews__name">Мария</div>
+                                    </div>
+                                    <div class="item-reviews__stat">
+                                        <div class="item-reviews__rating rating">
+                                            <ul class="rating__list">
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon ' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon ' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span class="item-reviews__date">22.02.2020</span>
+                                    </div>
+                                    <div class="item-reviews__text">приятный вкус</div>
+                                </li>
+                                <li class="reviews__list-item item-reviews">
+                                    <div class="item-reviews__top">
+                                        <img class="item-reviews__avatar" src="assets/images/coment-avater.svg" alt="Мария">
+                                        <div class="item-reviews__name">Мария</div>
+                                    </div>
+                                    <div class="item-reviews__stat">
+                                        <div class="item-reviews__rating rating">
+                                            <ul class="rating__list">
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon ' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon ' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span class="item-reviews__date">22.02.2020</span>
+                                    </div>
+                                    <div class="item-reviews__text">приятный вкус</div>
+                                </li>
+                                <li class="reviews__list-item item-reviews">
+                                    <div class="item-reviews__top">
+                                        <img class="item-reviews__avatar" src="assets/images/coment-avater.svg" alt="Мария">
+                                        <div class="item-reviews__name">Алексей</div>
+                                    </div>
+                                    <div class="item-reviews__stat">
+                                        <div class="item-reviews__rating rating">
+                                            <ul class="rating__list">
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon ' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="rating__star">
+                                                    <svg class='icon-box rating__star-icon ' >
+                                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span class="item-reviews__date">22.02.2020</span>
+                                    </div>
+                                    <div class="item-reviews__text">Покупали в том числе в этом весе. Масло по вкусу и органолептическим свойствам совершенно не похоже на натуральное. Упаковка выглядит как напечатанная на дешёвом принтере. На наш взгляд продукт является подделкой или контрафактной продукцией. Просим разобраться.
+                                        с</div>
+                                </li>
+                            </ul>
+                            <form class="reviews__form reviews-form" action="" method="get">
+                                <div class="reviews-form__top">
+                                    <div class="reviews-form__title">Ваша оценка</div>
+                                    <div class="reviews-form__rating">
+                                        <label class="reviews-form__rating-star" for="">
+                                            <input type="checkbox" name="rating">
+                                            <svg class='icon-box rating__star-icon' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </label>
+                                        <label class="reviews-form__rating-star" for="">
+                                            <input type="checkbox" name="rating">
+                                            <svg class='icon-box rating__star-icon' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </label>
+                                        <label class="reviews-form__rating-star" for="">
+                                            <input type="checkbox" name="rating">
+                                            <svg class='icon-box rating__star-icon' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </label>
+                                        <label class="reviews-form__rating-star" for="">
+                                            <input type="checkbox" name="rating">
+                                            <svg class='icon-box rating__star-icon' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </label>
+                                        <label class="reviews-form__rating-star" for="">
+                                            <input type="checkbox" name="rating">
+                                            <svg class='icon-box rating__star-icon' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                                <textarea class="reviews-form__text" name="reviews" id="" placeholder="Отзыв"></textarea>
+                                <button class="btn-reset reviews-form__btn" type="submit">Отправить отзыв</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="container">
+                    <div class="card-product__top">
+                        <h2 class="card-product__title title-2">Акции</h2>
+                        <a class="card-product__more" href="">
+                            <span>Все акции</span>
+                            <svg class='card-product__more-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#chevron-right'></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="card-product__items">
+                        <li class="card-product__item">
+                            <article class="card">
+                                <div class="card__img">
+                                    <a class="card__img-link" href="">
+                                        <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                                    </a>
+                                    <a class="card__tage" href="#">-50%</a>
+                                    <button class="btn-reset card__like">
+                                        <svg class='card__like-icon icon-box'>
+                                            <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__content">
+                                    <div class="card__prices">
+                                        <div class="card__price-box">
+                                            <div class="card__price card__price-cards">44,50</div>
+                                            <span class="card__price-descr">С картой</span>
+                                        </div>
+                                        <div class="card__price-box">
+                                            <div class="card__price">44,50</div>
+                                            <span class="card__price-descr">Обычная</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                                   <div class="rating">
+                                        <ul class="rating__list">
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn-reset card__btn">В корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="card-product__item">
+                            <article class="card">
+                                <div class="card__img">
+                                    <a class="card__img-link" href="">
+                                        <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                                    </a>
+                                    <a class="card__tage" href="#">-50%</a>
+                                    <button class="btn-reset card__like">
+                                        <svg class='card__like-icon icon-box'>
+                                            <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__content">
+                                    <div class="card__prices">
+                                        <div class="card__price-box">
+                                            <div class="card__price card__price-cards">44,50</div>
+                                            <span class="card__price-descr">С картой</span>
+                                        </div>
+                                        <div class="card__price-box">
+                                            <div class="card__price">44,50</div>
+                                            <span class="card__price-descr">Обычная</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                                   <div class="rating">
+                                        <ul class="rating__list">
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn-reset card__btn">В корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="card-product__item">
+                            <article class="card">
+                                <div class="card__img">
+                                    <a class="card__img-link" href="">
+                                        <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                                    </a>
+                                    <a class="card__tage" href="#">-50%</a>
+                                    <button class="btn-reset card__like">
+                                        <svg class='card__like-icon icon-box'>
+                                            <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__content">
+                                    <div class="card__prices">
+                                        <div class="card__price-box">
+                                            <div class="card__price card__price-cards">44,50</div>
+                                            <span class="card__price-descr">С картой</span>
+                                        </div>
+                                        <div class="card__price-box">
+                                            <div class="card__price">44,50</div>
+                                            <span class="card__price-descr">Обычная</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                                   <div class="rating">
+                                        <ul class="rating__list">
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                            <li class="rating__star">
+                                                <svg class='icon-box rating__star-icon ' >
+                                                    <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn-reset card__btn">В корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="card-product__item">
+                            <article class="card">
+                                <div class="card__img">
+                                    <a class="card__img-link" href="">
+                                        <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                                    </a>
+                                    <a class="card__tage" href="#">-50%</a>
+                                    <button class="btn-reset card__like">
+                                        <svg class='card__like-icon icon-box'>
+                                            <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card__content">
+                                    <div class="card__prices">
+                                        <div class="card__price-box">
+                                            <div class="card__price card__price-cards">44,50</div>
+                                            <span class="card__price-descr">С картой</span>
+                                        </div>
+                                        <div class="card__price-box">
+                                            <div class="card__price">44,50</div>
+                                            <span class="card__price-descr">Обычная</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                                   <div class="rating">
+                                    <ul class="rating__list">
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon ' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                        <li class="rating__star">
+                                            <svg class='icon-box rating__star-icon ' >
+                                                <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <button class="btn-reset card__btn">В корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <img src="assets/images/footer-logo.svg" alt="Логотип">
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">О компании</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Контакты</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Вакансии</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Статьи</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Политика обработки персональных данных</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/instagram.svg" alt="instagram">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/vk.svg" alt="vkontacte">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/facebook.svg" alt="facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/ok.svg" alt="ok">
+          </a>
+        </li>
+      </ul>
+      <a class="footer__tel" href="#">
+        <svg class='footer__tel-icon icon-box'>
+          <use xlink:href='assets/images/sprite/sprite.svg#phone'></use>
+        </svg>
+        <span>8 800 777 33 33</span>
+      </a>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__dezing">
+        <span>Дизайн</span>
+        <svg class='footer__dezing-icon'>
+          <use xlink:href='assets/images/sprite/sprite.svg#logo-zasovkiy'></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+<script src="assets/js/main.js"></script>
+
+  <script src="/assets/js/swiper.js"></script>
+</body>
+</html>

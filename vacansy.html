@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Вакансии</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header ">
+  <div class="container header__container">
+    <a class="logo header__logo" href="index.html" aria-label="Логотип">
+      <picture>
+        <source media="(max-width: 1024.99px)" srcset="assets/images/logo-table.svg">
+        <img src="assets/images/logo.svg" alt="Логотип">
+      </picture>
+    </a>
+    <div class="menu">
+      <a class="menu__btn" href="">
+        <svg class='menu__btn-icon icon-box'>
+          <use xlink:href='assets/images/sprite/sprite.svg#menu'></use>
+        </svg>
+        <span class="menu__btn-label">Каталог</span>
+      </a>
+      <div class="menu__list">
+        <div class="container">
+          <div class="menu__inner">
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Молоко, сыр, яйцо</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Хлеб</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Фрукты и овощи</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Замороженые продукты</a>
+              </li>
+            </ul>
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Наптики</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Кондитерские изделия</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Чай, кофе</a>
+              </li>
+            </ul>
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Бакалея</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Здоровые напитки</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Зоотовары</a>
+              </li>
+            </ul>
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Непродовольственные товары</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Детское питание</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Мясо, птица, колбаса</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <div class="search__field">
+        <input class="search__input" type="text" placeholder="Найти товар">
+        <button class="btn-reset search__btn">
+          <svg class='search__btn-icon icon-box'>
+            <use xlink:href='assets/images/sprite/sprite.svg#search'></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav class="header__nav header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="btn-reset header-nav__link" href="" >
+            <svg class="header-nav__link-icon icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#menu'></use>
+            </svg>
+            <span class="header-nav__link-text">Каталог</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">
+            <svg class="header-nav__link-icon icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+            </svg>
+            <span class="header-nav__link-text">Избранное</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">
+            <svg class="header-nav__link-icon icon-box icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#order'></use>
+            </svg>
+            <span class="header-nav__link-text">Заказы</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">
+            <svg class="header-nav__link-icon icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#shopping-cart'></use>
+            </svg>
+            <span class="header-nav__link-text">Корзина</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="user-menu" href="">
+            <img class="user-menu__avatar" src="assets/images/avatar.webp" alt="Алексей">
+            <span class="user-menu__name">Алексей</span>
+            <button class="btn-reset user-menu__arrow">
+              <svg class='user-menu__arrow-icon icon-box'>
+                <use xlink:href='assets/images/sprite/sprite.svg#chevron-down'></use>
+              </svg>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <main class="main">
+        <section class="vacansy section">
+            <div class="container">
+                <ul class="breadcrambs">
+                    <li>
+                        <a href="">Главная</a>
+                        <svg class='icon-box'>
+                            <use xlink:href='assets/images/sprite/sprite.svg#chevron-right'></use>
+                        </svg>
+                    </li>
+                     <li>
+                        <a>Вакансии</a>
+                    </li>
+                </ul>
+                <h1 class="vacansy__title title-1">Вакансии</h1>
+                <ul class="vacansy__items">
+                    <li class="vacansy__item item-vacansy">
+                        <div class="item-vacansy__item">
+                            <h2 class="item-vacansy__title">Должность</h2>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Требования</div>
+                                <p class="item-vacansy__content-text">Текст про требования текст про требования текст про требования текст про требования текст про требования</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Обязанности</div>
+                                <p class="item-vacansy__content-text">Текст про обязаности текст про обязаности текст про обязаности текст про обязаности текст про обязаности</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <ul class="item-vacansy__content-items">
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <a class="item-vacansy__content-phone" href="tel:79042713590">
+                                    <svg class='icon-box'>
+                                        <use xlink:href='assets/images/sprite/sprite.svg#phone'></use>
+                                    </svg>
+                                    <span>+7 904 271 35 90</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="vacansy__item item-vacansy">
+                        <div class="item-vacansy__item">
+                            <h2 class="item-vacansy__title">Должность</h2>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Требования</div>
+                                <p class="item-vacansy__content-text">Текст про требования текст про требования текст про требования текст про требования текст про требования</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Обязанности</div>
+                                <p class="item-vacansy__content-text">Текст про обязаности текст про обязаности текст про обязаности текст про обязаности текст про обязаности</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <ul class="item-vacansy__content-items">
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <a class="item-vacansy__content-phone" href="tel:79042713590">
+                                    <svg class='icon-box'>
+                                        <use xlink:href='assets/images/sprite/sprite.svg#phone'></use>
+                                    </svg>
+                                    <span>+7 904 271 35 90</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="vacansy__item item-vacansy">
+                        <div class="item-vacansy__item">
+                            <h2 class="item-vacansy__title">Должность</h2>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Требования</div>
+                                <p class="item-vacansy__content-text">Текст про требования текст про требования текст про требования текст про требования текст про требования</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Обязанности</div>
+                                <p class="item-vacansy__content-text">Текст про обязаности текст про обязаности текст про обязаности текст про обязаности текст про обязаности</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <ul class="item-vacansy__content-items">
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <a class="item-vacansy__content-phone" href="tel:79042713590">
+                                    <svg class='icon-box'>
+                                        <use xlink:href='assets/images/sprite/sprite.svg#phone'></use>
+                                    </svg>
+                                    <span>+7 904 271 35 90</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="vacansy__item item-vacansy">
+                        <div class="item-vacansy__item">
+                            <h2 class="item-vacansy__title">Должность</h2>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Требования</div>
+                                <p class="item-vacansy__content-text">Текст про требования текст про требования текст про требования текст про требования текст про требования</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Обязанности</div>
+                                <p class="item-vacansy__content-text">Текст про обязаности текст про обязаности текст про обязаности текст про обязаности текст про обязаности</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <ul class="item-vacansy__content-items">
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <a class="item-vacansy__content-phone" href="tel:79042713590">
+                                    <svg class='icon-box'>
+                                        <use xlink:href='assets/images/sprite/sprite.svg#phone'></use>
+                                    </svg>
+                                    <span>+7 904 271 35 90</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="vacansy__item item-vacansy">
+                        <div class="item-vacansy__item">
+                            <h2 class="item-vacansy__title">Должность</h2>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Требования</div>
+                                <p class="item-vacansy__content-text">Текст про требования текст про требования текст про требования текст про требования текст про требования</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Обязанности</div>
+                                <p class="item-vacansy__content-text">Текст про обязаности текст про обязаности текст про обязаности текст про обязаности текст про обязаности</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <ul class="item-vacansy__content-items">
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <a class="item-vacansy__content-phone" href="tel:79042713590">
+                                    <svg class='icon-box'>
+                                        <use xlink:href='assets/images/sprite/sprite.svg#phone'></use>
+                                    </svg>
+                                    <span>+7 904 271 35 90</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="vacansy__item item-vacansy">
+                        <div class="item-vacansy__item">
+                            <h2 class="item-vacansy__title">Должность</h2>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Требования</div>
+                                <p class="item-vacansy__content-text">Текст про требования текст про требования текст про требования текст про требования текст про требования</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Обязанности</div>
+                                <p class="item-vacansy__content-text">Текст про обязаности текст про обязаности текст про обязаности текст про обязаности текст про обязаности</p>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <ul class="item-vacansy__content-items">
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                    <li>Текст про условия текст про условия </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-vacansy__item">
+                            <div class="item-vacansy__content">
+                                <div class="item-vacansy__content-title">Условия</div>
+                                <a class="item-vacansy__content-phone" href="tel:79042713590">
+                                    <svg class='icon-box'>
+                                        <use xlink:href='assets/images/sprite/sprite.svg#phone'></use>
+                                    </svg>
+                                    <span>+7 904 271 35 90</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <img src="assets/images/footer-logo.svg" alt="Логотип">
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">О компании</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Контакты</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Вакансии</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Статьи</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Политика обработки персональных данных</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/instagram.svg" alt="instagram">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/vk.svg" alt="vkontacte">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/facebook.svg" alt="facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/ok.svg" alt="ok">
+          </a>
+        </li>
+      </ul>
+      <a class="footer__tel" href="#">
+        <svg class='footer__tel-icon icon-box'>
+          <use xlink:href='assets/images/sprite/sprite.svg#phone'></use>
+        </svg>
+        <span>8 800 777 33 33</span>
+      </a>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__dezing">
+        <span>Дизайн</span>
+        <svg class='footer__dezing-icon'>
+          <use xlink:href='assets/images/sprite/sprite.svg#logo-zasovkiy'></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

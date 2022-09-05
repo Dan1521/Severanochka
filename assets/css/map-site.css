@@ -1,0 +1,29 @@
+.map-site {
+  max-width: 1200px;
+  padding: 80px 30px;
+}
+
+.map-site__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.map-site__link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  padding: 4px 2px;
+  -webkit-transition: color 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+
+.map-site__link:hover {
+  color: #FF6633;
+}
+
+.map-site__logo {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}

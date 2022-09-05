@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=0943d4cd-3d38-4838-b1cb-a3c22f569610&lang=ru_RU"></script>
+  <title>Главная</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header ">
+  <div class="container header__container">
+    <a class="logo header__logo" href="index.html" aria-label="Логотип">
+      <picture>
+        <source media="(max-width: 1024.99px)" srcset="assets/images/logo-table.svg">
+        <img src="assets/images/logo.svg" alt="Логотип">
+      </picture>
+    </a>
+    <div class="menu">
+      <a class="menu__btn" href="">
+        <svg class='menu__btn-icon icon-box'>
+          <use xlink:href='assets/images/sprite/sprite.svg#menu'></use>
+        </svg>
+        <span class="menu__btn-label">Каталог</span>
+      </a>
+      <div class="menu__list">
+        <div class="container">
+          <div class="menu__inner">
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Молоко, сыр, яйцо</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Хлеб</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Фрукты и овощи</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Замороженые продукты</a>
+              </li>
+            </ul>
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Наптики</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Кондитерские изделия</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Чай, кофе</a>
+              </li>
+            </ul>
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Бакалея</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Здоровые напитки</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Зоотовары</a>
+              </li>
+            </ul>
+            <ul class="menu__col">
+              <li class="menu__item">
+                <a class="menu__link" href="" >Непродовольственные товары</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Детское питание</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="" >Мясо, птица, колбаса</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <div class="search__field">
+        <input class="search__input" type="text" placeholder="Найти товар">
+        <button class="btn-reset search__btn">
+          <svg class='search__btn-icon icon-box'>
+            <use xlink:href='assets/images/sprite/sprite.svg#search'></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav class="header__nav header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="btn-reset header-nav__link" href="" >
+            <svg class="header-nav__link-icon icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#menu'></use>
+            </svg>
+            <span class="header-nav__link-text">Каталог</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">
+            <svg class="header-nav__link-icon icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+            </svg>
+            <span class="header-nav__link-text">Избранное</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">
+            <svg class="header-nav__link-icon icon-box icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#order'></use>
+            </svg>
+            <span class="header-nav__link-text">Заказы</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">
+            <svg class="header-nav__link-icon icon-box">
+              <use xlink:href='assets/images/sprite/sprite.svg#shopping-cart'></use>
+            </svg>
+            <span class="header-nav__link-text">Корзина</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a class="user-menu" href="">
+            <img class="user-menu__avatar" src="assets/images/avatar.webp" alt="Алексей">
+            <span class="user-menu__name">Алексей</span>
+            <button class="btn-reset user-menu__arrow">
+              <svg class='user-menu__arrow-icon icon-box'>
+                <use xlink:href='assets/images/sprite/sprite.svg#chevron-down'></use>
+              </svg>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+      <main class="main">
+        <section class="hero" style='background-image: url(assets/images/hero-bg.webp)'>
+    <div class="container">
+        <div class="hero__inner">
+            <img class="hero__img" src="assets/images/hero-img.webp" alt="" >
+            <h1 class="hero__title">Доставка бесплатно от 1000 ₽</h1>
+        </div>
+    </div>
+</section>
+        <section class="card-product">
+    <div class="container">
+        <div class="card-product__top">
+            <h2 class="card-product__title title-2">Акции</h2>
+            <a class="card-product__more" href="">
+                <span>Все акции</span>
+                <svg class='card-product__more-icon icon-box'>
+                    <use xlink:href='assets/images/sprite/sprite.svg#chevron-right'></use>
+                </svg>
+            </a>
+        </div>
+        <ul class="card-product__items">
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="">
+                            <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                        </a>
+                        <a class="card__tage" href="#">-50%</a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">44,50</div>
+                                <span class="card__price-descr">С картой</span>
+                            </div>
+                            <div class="card__price-box">
+                                <div class="card__price">44,50</div>
+                                <span class="card__price-descr">Обычная</span>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                       <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="">
+                            <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                        </a>
+                        <a class="card__tage" href="#">-50%</a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">44,50</div>
+                                <span class="card__price-descr">С картой</span>
+                            </div>
+                            <div class="card__price-box">
+                                <div class="card__price">44,50</div>
+                                <span class="card__price-descr">Обычная</span>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                       <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="">
+                            <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                        </a>
+                        <a class="card__tage" href="#">-50%</a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">44,50</div>
+                                <span class="card__price-descr">С картой</span>
+                            </div>
+                            <div class="card__price-box">
+                                <div class="card__price">44,50</div>
+                                <span class="card__price-descr">Обычная</span>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                       <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="">
+                            <img src="assets/images/card/01.webp" alt="Г/Ц Блинчики с мясом вес, Россия">
+                        </a>
+                        <a class="card__tage" href="#">-50%</a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">44,50</div>
+                                <span class="card__price-descr">С картой</span>
+                            </div>
+                            <div class="card__price-box">
+                                <div class="card__price">44,50</div>
+                                <span class="card__price-descr">Обычная</span>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Г/Ц Блинчики с мясом вес, Россия</a></h3>
+                       <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</section><!-- Акции -->
+<section class="card-product">
+    <div class="container">
+        <div class="card-product__top">
+            <h2 class="card-product__title title-2">Новинки</h2>
+            <a class="card-product__more" href="">
+                <span>Все новинки</span>
+                <svg class='card-product__more-icon icon-box'>
+                    <use xlink:href='assets/images/sprite/sprite.svg#chevron-right'></use>
+                </svg>
+            </a>
+        </div>
+        <ul class="card-product__items">
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="#">
+                            <img src="assets/images/card/02.webp" alt="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»">
+                        </a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices card__prices-mb">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">544,50</div>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</a></h3>
+                        <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="#">
+                            <img src="assets/images/card/02.webp" alt="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»">
+                        </a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices card__prices-mb">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">544,50</div>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</a></h3>
+                        <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="#">
+                            <img src="assets/images/card/02.webp" alt="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»">
+                        </a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices card__prices-mb">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">544,50</div>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</a></h3>
+                        <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="#">
+                            <img src="assets/images/card/02.webp" alt="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»">
+                        </a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices card__prices-mb">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">544,50</div>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</a></h3>
+                        <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</section><!-- новики -->
+<section class="card-product">
+    <div class="container">
+        <div class="card-product__top">
+            <h2 class="card-product__title title-2">Покупали раньше</h2>
+            <a class="card-product__more" href="">
+                <span>Все покупки</span>
+                <svg class='card-product__more-icon icon-box'>
+                    <use xlink:href='assets/images/sprite/sprite.svg#chevron-right'></use>
+                </svg>
+            </a>
+        </div>
+        <ul class="card-product__items">
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="#">
+                            <img src="assets/images/card/03.webp" alt="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»">
+                        </a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices card__prices-mb">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">77</div>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</a></h3>
+                        <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="#">
+                            <img src="assets/images/card/03.webp" alt="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»">
+                        </a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices card__prices-mb">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">77</div>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</a></h3>
+                        <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+            <li class="card-product__item">
+                <article class="card">
+                    <div class="card__img">
+                        <a class="card__img-link" href="#">
+                            <img src="assets/images/card/03.webp" alt="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»">
+                        </a>
+                        <button class="btn-reset card__like">
+                            <svg class='card__like-icon icon-box'>
+                                <use xlink:href='assets/images/sprite/sprite.svg#shape'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__prices card__prices-mb">
+                            <div class="card__price-box">
+                                <div class="card__price card__price-cards">77</div>
+                            </div>
+                        </div>
+                        <h3 class="card__title"><a href="#">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</a></h3>
+                        <div class="rating">
+                            <ul class="rating__list">
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon rating__star-icon-active' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                                <li class="rating__star">
+                                    <svg class='icon-box rating__star-icon ' >
+                                        <use xlink:href='assets/images/sprite/sprite.svg#star'></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn-reset card__btn">В корзину</button>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</section><!-- Покупали раньше -->
+
+
+        <section class="offer">
+    <div class="container">
+        <h2 class="offer__title title-2">Специальные предложения</h2>
+        <ul class="offer__items">
+            <li class="offer__item">
+                <a class="offer-card offer-card--cards" href="">
+                    <div class="offer-card__content">
+                        <h3 class="offer-card__title">Оформите карту «Северяночка»</h3>
+                        <div class="offer-card__descr">И получайте бонусы при покупке в магазинах и на сайте</div>
+                    </div>
+                    <img class="offer-card__img" src="assets/images/offer-1.webp" alt="">
+                </a>
+            </li>
+            <li class="offer__item">
+                <a class="offer-card offer-card--basket" href="">
+                    <div class="offer-card__content">
+                        <h3 class="offer-card__title">Покупайте акционные товары</h3>
+                        <div class="offer-card__descr">И получайте вдвое больше бонусов</div>
+                    </div>
+                    <img class="offer-card__img" src="assets/images/offer-2.webp" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+        <!-- Наши магазины -->
+<section class="our-stores">
+    <div class="container">
+        <h2 class="our-stores__title title-2">Наши магазины</h2>
+        <ul class="our-stores__tags">
+            <li class="our-stores__tags-item">
+                <button class="btn-reset our-stores__tag" data-met="[65.324683, 53.413952]">п.Щельяюр</button>
+            </li>
+            <li class="our-stores__tags-item">
+                <button class="btn-reset our-stores__tag" data-met="[65.295411, 53.194647]">д.Вертеп</button>
+            </li>
+            <li class="our-stores__tags-item">
+                <button class="btn-reset our-stores__tag" data-met="[65.295280, 53.277542]">с.Краснобор</button>
+            </li>
+            <li class="our-stores__tags-item">
+                <button class="btn-reset our-stores__tag" data-met="[65.275735, 53.366118]">д.Диюр</button>
+            </li>
+        </ul>
+        <div class="our-stores__map" id="map">
+        </div>
+    </div>
+</section>
+        <section class="blog">
+    <div class="container">
+        <div class="blog__top">
+            <h2 class="blog__title title-2">Блог</h2>
+            <a class="blog__more" href="">
+                <span>Все акции</span>
+                <svg class='blog__more-icon icon-box'>
+                    <use xlink:href='assets/images/sprite/sprite.svg#chevron-right'></use>
+                </svg>
+            </a>
+        </div>
+        <ul class="blog__items">
+            <li class="blog__item">
+                <article class="blog-post">
+                    <img class="blog-post__img" src="assets/images/blog/01.webp" alt="Режим использования масок и перчаток на территории магазинов">
+                    <div class="blog-post__content">
+                        <span class="blog-post__date">05.03.2021</span>
+                        <h3 class="blog-post__title">Режим использования масок и перчаток на территории магазинов</h3>
+                        <p class="blog-post__descr">Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                        <a class="blog-post__more" href="">Подробнее</a>
+                    </div>
+                </article>
+            </li>
+            <li class="blog__item">
+                <article class="blog-post">
+                    <img class="blog-post__img" src="assets/images/blog/01.webp" alt="Режим использования масок и перчаток на территории магазинов">
+                    <div class="blog-post__content">
+                        <span class="blog-post__date">05.03.2021</span>
+                        <h3 class="blog-post__title">Режим использования масок и перчаток на территории магазинов</h3>
+                        <p class="blog-post__descr">Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                        <a class="blog-post__more" href="">Подробнее</a>
+                    </div>
+                </article>
+            </li>
+            <li class="blog__item">
+                <article class="blog-post">
+                    <img class="blog-post__img" src="assets/images/blog/01.webp" alt="Режим использования масок и перчаток на территории магазинов">
+                    <div class="blog-post__content">
+                        <span class="blog-post__date">05.03.2021</span>
+                        <h3 class="blog-post__title">Режим использования масок и перчаток на территории магазинов</h3>
+                        <p class="blog-post__descr">Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                        <a class="blog-post__more" href="">Подробнее</a>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</section>
+      </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <img src="assets/images/footer-logo.svg" alt="Логотип">
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">О компании</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Контакты</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Вакансии</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Статьи</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Политика обработки персональных данных</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/instagram.svg" alt="instagram">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/vk.svg" alt="vkontacte">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/facebook.svg" alt="facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="assets/images/ok.svg" alt="ok">
+          </a>
+        </li>
+      </ul>
+      <a class="footer__tel" href="#">
+        <svg class='footer__tel-icon icon-box'>
+          <use xlink:href='assets/images/sprite/sprite.svg#phone'></use>
+        </svg>
+        <span>8 800 777 33 33</span>
+      </a>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__dezing">
+        <span>Дизайн</span>
+        <svg class='footer__dezing-icon'>
+          <use xlink:href='assets/images/sprite/sprite.svg#logo-zasovkiy'></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
